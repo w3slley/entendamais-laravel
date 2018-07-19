@@ -1,0 +1,275 @@
+
+body {
+    margin:0; 
+    
+}
+
+
+nav {
+    width: 100%; 
+    position: fixed;
+    top:0;
+    z-index: 1;
+    transition: background-color .3s;
+    
+}
+
+
+nav ul li {
+    list-style-type: none;
+    padding: 18px 0 10px 0;
+    float: right;
+
+
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    font-family: Amatic SC;
+    padding: 0px 20px 10px 50px;
+    text-decoration: none;
+
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+
+
+.logo-nav {
+    max-width:60px;
+    float:left;
+    margin: 10px 0 10px 20px;
+    
+
+}
+
+#video-background {
+    width: 100%;
+    object-fit: fill;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 100%;
+    max-width: 100%;
+    z-index: -1;
+    
+}
+
+
+
+
+.main-text {
+    margin: 0;
+    width: 50%;
+    position: absolute;
+    left: 100px;
+    top: 35%;
+    
+          
+
+}
+
+.main-text h1{
+    color: white;
+    text-align: center;
+}
+
+.main-img{
+    margin: 0;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 25%;
+   
+
+}
+
+.main-img img{
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+.body{
+   margin-top: 40%; 
+}
+
+
+
+
+#text1 {
+padding-top: 100px;
+    font-family: Poiret One;
+    font-size: 30px;
+    
+}
+
+#text2 {
+padding-top: 100px;
+    font-family: Poiret One;
+    font-size: 30px;
+}
+
+.col-md-6 #img1{
+    max-width: 500px;
+    border-radius: 10px;
+    
+    
+}
+
+
+section {
+    text-align: justify;
+    padding: 10px;
+    font-size: 20px;
+    
+}
+
+footer {
+    background-color: black;
+    padding: 10px;
+}
+
+
+#arrow-back{
+    margin: 10px;
+    width: 50px;
+    
+}
+
+.topnav .icon {
+display: none;
+margin: 10px 20px 0 0;
+} 
+
+.topnav .icon:hover {
+text-decoration: none;
+}
+
+    
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 720px) {
+    #video {
+        height: 400px;
+    }
+    .topnav a {display: none;}
+    .topnav a.icon {
+    display:inline;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    color: black;
+    }
+
+    nav .logo-nav { /*This is to make the logo image to be in the middle of the nav!!*/
+        position:relative;
+        left: 36%;
+    }
+
+
+    .img-fluid { 
+        border-radius: 0px;
+        width: 100%;  /*This is to make the image responsive on mobile - takes the hole page!!*/
+        height:200px;
+        
+        
+        
+    }
+
+    a .img-fluid { 
+        border-radius: 0px;
+        width: 100%;  /*This is to make the image responsive on mobile - takes the hole page!!*/
+        height:120px;
+        padding-top: 10px;
+        
+    }
+    p {
+        text-align: center;
+    }
+
+    #logo-main {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    }
+
+
+    .col-md-6 {
+    width: 100%;
+    margin-left: 20px;
+    }
+
+    h1 {
+    font-size: 30px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+
+    }
+    #imag {
+    width: 0px;
+    left: 4%;
+    }
+
+    #video-background {
+    height: 400px;
+    }
+
+    #first {
+    left: 0%;
+    margin: 0 auto;
+    top: 25%;
+    }
+    .col-md-6 {
+    width: 100%;
+    }
+
+    } 
+
+@media only screen and (max-width: 720px) { /*Isso faz com que se a tela ficar menor de 600 px tudo o que está nos colxetes se torna verdadeiro!*/
+
+    .topnav .responsive {
+        position: relative;
+        
+    }
+
+    .topnav.responsive a.icon {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    }
+
+    .topnav.responsive li a {
+    float: none;
+    display: block;
+        font-family: Indie Flower;
+        font-size: 22px;
+        
+
+
+
+
+
+    }
+    .responsive li {     /*finalmente consegui!! eu tinha que tirar o botão JS de dentro do UL - ai coloquei essa e os dois comandos para dar certo*/
+        float:none;
+        display: block;
+        padding-top: 5px;
+        width:100%;
+        text-align: center;
+
+    }
+
+    .responsive ul {
+        padding-top:70px;
+        position: relative;
+        margin: auto 0;
+        right: 7%;
+        
+    }
+
+}
+
