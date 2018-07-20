@@ -9,6 +9,8 @@ nav {
     position: absolute;
     top:0;
     z-index: 1;
+    font-size: 30px;
+    font-family: Amatic SC;
     
 }
 
@@ -26,8 +28,6 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: black;
-    font-size: 30px;
-    font-family: Amatic SC;
     padding: 0px 20px 10px 50px;
     
     
@@ -46,6 +46,16 @@ nav ul li a:hover{
     float:left;
     margin: 10px 0 10px 20px;
 
+}
+#navbarDropdown{
+   
+}
+#dropdown{
+    font-size:15px;
+    font-family: arial;
+    position: absolute;
+    min-width:0;
+    width: 120px;
 }
 /*STYLE OF POSTS DISPLAY - INDEX.BLADE.PHP*/
 .body{
@@ -112,6 +122,30 @@ h2 a:hover{
     font-family: Quicksand;
 }
 
+.display-comments{
+    background-color: gray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.write-comments{
+    color:black;
+}
+
+
+/*Style EDIT PAGE*/
+.body-edit{
+    margin: 0 auto;
+    width: 70%;
+}
+
+
+/*Style CREATE PAGE*/
+.body-create{
+    margin: 0 auto;
+    width: 70%;
+}
+
+/**/
 section {
     text-align: justify;
     padding: 10px;
@@ -123,6 +157,7 @@ footer {
     margin-top: 50px;
     background-color: black;
     padding-bottom: 100px;
+    
    
 }
 /*Style ABOUT ME PAGE*/

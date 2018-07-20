@@ -22,12 +22,11 @@
                     <img class="post-img-index" src="/storage/cover_images/{{$post->cover_image}}"">
                 @endif 
             </div>
-            @php /*This is how you insert php code in blade templating engine*/
-            $title = str_replace(' ', '-', $post->title);
-            $post_title = strtolower($title); //This takes the post title and uses as the url of the post itself
-            @endphp
+           
             <div class="post-text">
-                <h2><a href="/posts/{{$post_title}}">{{$post->title}}</a></h2>
+                <h2><a href="/posts/{{str_slug($post->title)}}">{{$post->title}}</a></h2>
+                {{--To create your slugs, use str_slug($string)! --}}
+               
                 <p>{{$post->created_at->diffForHumans()}}</p>
             </div>
 
@@ -38,5 +37,6 @@
     @endif
     
     
-</div>     
+</div>  
+<script src="/js/post.js"></script>   
 @endsection

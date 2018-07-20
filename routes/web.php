@@ -22,3 +22,8 @@ Route::get('/about-project', function () {
 });
 Route::resource('/posts', 'PostsController');
 
+Route::post('/posts/comments', 'CommentsController@store');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

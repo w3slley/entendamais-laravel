@@ -10,7 +10,7 @@
 
 @section('body')
     <div class="body">
-
+    <hr>
     <strong style="font-size: 40px">Sobre o autor:</strong> <br><br>
         <img class="my-photo" src="images/profile.jpg" width="250px">
   

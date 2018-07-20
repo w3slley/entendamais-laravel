@@ -1,6 +1,6 @@
 @extends('layout')
 @section('title')
-<title>Entenda Mais | Articles</title>
+<title>{{$post[0]->title}} | Entenda Mais</title>
 @endsection
 
 @section('css')
@@ -25,9 +25,20 @@
                 <div class="post-content">{!! $post->post_content !!}</div>
             </div>
         @endforeach
+        <hr>
+        <h1>Comments ({{$count_comments}}):</h1>
+        @foreach($comments as $comment)
+            <div class="display-comments">
+                <p>{{$comment->author}}</p>
+                <p>{{$comment->comment}}</p>
+                <p>{{$comment->created_at->diffForHumans()}}</p>
+            </div>
+        @endforeach
+        <hr>
+        @include('comments.display')
         
     
         
-        
+    
     </div> 
 @endsection

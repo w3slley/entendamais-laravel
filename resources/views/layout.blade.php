@@ -3,6 +3,9 @@
 <head>
     @yield('title')
 
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,8 +31,7 @@
   
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-
+<script src="/js/post.js"></script>
 </body>
 </html>
