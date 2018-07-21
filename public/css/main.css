@@ -48,6 +48,9 @@ nav ul li a:hover{
     margin: 10px 0 10px 20px;
 
 }
+.responsive-icon{
+    display: none;
+}
 #navbarDropdown{
    
 }

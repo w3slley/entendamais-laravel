@@ -8,7 +8,15 @@
 @endsection
 
 @section('body')
-
+    <div class="side-bar">
+        <ul>
+            <a class="close-icon" href="#">&#10005;</a>
+            <li><a class="nav-link-mobile" href="/">Início</a></li> 
+            <li><a class="nav-link-mobile" href="/posts">Artigos</a></li>
+            <li><a class="nav-link-mobile" href="/about-me">Sobre o autor</a></li>
+            <li><a class="nav-link-mobile" href="/about-project">Sobre o projeto</a></li>
+        </ul>    
+    </div>
     <div class="main-text">
         <h1>Venha entender mais sobre o mundo em que vivemos!</h1>
     </div>
@@ -30,19 +38,22 @@
 
     </div>
    
-   <div class="text-container-second">
-        <p>Inspire-se com citações que fazem você pensar mais sobre a realidade!</p>
-     </div>
-    <div class="img-container-second">
-        <img src="images/age.jpg">
+   <div class="container-div">
+    <div class="text-container-second">
+            <p>Inspire-se com citações que fazem você pensar mais sobre a realidade!</p>
+        </div>
+        <div class="img-container-second">
+            <img src="images/age.jpg">
 
-    </div>
-   
-    <div class="video">
-        <h1>Aprenda com os vídeos do projeto!</h1>
-        <video controls>
-        <source src="videos/curiosidade_humana.mp4" type="video/mp4">
-        </video>
+        </div>
+   </div>
+   <div class="container-div">
+        <div class="video">
+            <h1>Aprenda com os vídeos do projeto!</h1>
+            <video controls>
+            <source src="videos/curiosidade_humana.mp4" type="video/mp4">
+            </video>
+        </div>
     </div>
 
     {{-- <div class="text-container">

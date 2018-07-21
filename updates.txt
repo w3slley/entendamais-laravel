@@ -1,0 +1,11 @@
+23:44 21/07 (Spend most of my time in the front end)
+Features done:
+	1)Redesign the website for mobile devices
+	2)Started to implement the responsive sidebar (still have some problems to fix)
+	3)In the beginning of the day, I fixed the design of the comments and added social links for my projects (github, youtube and linkedin) and for the Entenda Mais facebook and youtube page. Also edit the design of the text and enlarged the font size.
+	
+
+
+
+Things I still have to do:
+	1) Allow the sidebar to be accessed in all parts of the home page (right now if you click on it in the bottom of the page it goes back to the video and only then loads the sidebar).
