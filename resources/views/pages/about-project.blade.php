@@ -9,59 +9,49 @@
 @endsection
 
 @section('body')
-    
-    <div id = "carousel" class="container">
-    
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="images/inGS2J.jpg" alt="Los Angeles" style="width:100%; height:600px;">
+    <div class="body">
+        <hr>
+        <div id = "carousel" class="container">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/pi.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                    <img class="d-block w-100" src="images/light-year.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                    <img class="d-block w-100" src="images/enceladus.jpg" alt="Third slide">
+                    </div>
                 </div>
-
-                <div class="item">
-                    <img src="images/black%20hole.jpg" alt="Chicago" style="width:100%; height:600px;">
-                </div>
-                
-                <div class="item">
-                    <img src="images/light-year.jpg" alt="Chicago" style="width:100%; height:600px;">
-                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>    
+        </div>
+           
+     
+           
             
-                <div class="item">
-                    <img src="images/enceladus.jpg" alt="New york" style="width:100%; height:600px;">
-                </div>
+            <div class="description">
+             <strong style="font-size: 30px">Sobre o projeto:</strong>
+            <p class="text-about-project">
+                O projeto Entenda Mais foi criado com o intuito de tornar público um dos bens mais preciosos de nossa espécie: o conhecimento. Portanto, através da plataforma será possível obter conhecimento sobre diversos tópicos sobre o mundo natural, desde matemática e física até biologia e astronomia, tendo como intuito, sempre, apresentar as características físicas do mundo em que vivemos.
+                </p>
+
             </div>
 
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div>
- 
-    <article>   
-        <strong style="font-size: 30px">Sobre o projeto:</strong> <br>
+            <hr>
         
-        <section>
-        <p>
-            O projeto Entenda Mais foi criado com o intuito de tornar público um dos bens mais preciosos de nossa espécie: o conhecimento. Portanto, através da plataforma será possível obter conhecimento sobre diversos tópicos sobre o mundo natural, desde matemática e física até biologia e astronomia, tendo como intuito, sempre, apresentar as características físicas do mundo em que vivemos.
-            </p>
-
-        </section>
-
-        <hr>
-    </article>
+    </div>
+      <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 @endsection

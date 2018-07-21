@@ -1,3 +1,4 @@
+/*Layout Style*/
 body{
     margin: 0;
 }
@@ -56,6 +57,21 @@ nav ul li a:hover{
     position: absolute;
     min-width:0;
     width: 120px;
+}
+
+section {
+    text-align: justify;
+    padding: 10px;
+    font-size: 25px;
+    
+}
+
+footer {
+    margin-top: 50px;
+    background-color: black;
+    padding-bottom: 100px;
+    
+   
 }
 /*STYLE OF POSTS DISPLAY - INDEX.BLADE.PHP*/
 .body{
@@ -145,21 +161,7 @@ h2 a:hover{
     width: 70%;
 }
 
-/**/
-section {
-    text-align: justify;
-    padding: 10px;
-    font-size: 20px;
-    
-}
 
-footer {
-    margin-top: 50px;
-    background-color: black;
-    padding-bottom: 100px;
-    
-   
-}
 /*Style ABOUT ME PAGE*/
 .my-photo{
     border-radius: 100%;
@@ -167,6 +169,20 @@ footer {
     display: block;
     margin-bottom: 50px;
 }
+.description-about-me p{
+    font-size: 25px;
+    text-align: justify;
+}
+/*Style ABOUT PROJECT PAGE*/
+.description {
+    margin-top: 30px;
+}
+.description p {
+    font-size:25px;
+    text-align: justify;
+    margin-top: 50px;
+}
+
 
 
 .topnav .icon {

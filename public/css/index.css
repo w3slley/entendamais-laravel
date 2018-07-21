@@ -1,7 +1,12 @@
-
 body {
     margin:0; 
+    background-color: #F6F4D2;
+    overflow-x: hidden;/*This is how I solved the problem with the vertical scrollbar showing up when the animation of the image and text occour in the index file -*/
     
+}
+
+.body{
+    position: relative;
 }
 
 
@@ -10,7 +15,8 @@ nav {
     position: fixed;
     top:0;
     z-index: 1;
-    transition: background-color .3s;
+    transition: background-color .6s, box-shadow .6s;
+    
     
 }
 
@@ -76,6 +82,7 @@ nav ul li {
 .main-text h1{
     color: white;
     text-align: center;
+    font-family: Poiret One;
 }
 
 .main-img{
@@ -93,61 +100,69 @@ nav ul li {
     margin: 0 auto;
     display: block;
 }
-.body{
-   margin-top: 40%; 
+
+.text-container-first{
+    position: absolute;
+    top: 700px;
+    display: none;
+    width: 50%;
 }
-
-
-
-
-#text1 {
-padding-top: 100px;
+.text-container-first p{
+    margin: 12% auto;
+    width: 100%;
+    font-size: 50px;
     font-family: Poiret One;
-    font-size: 30px;
     
 }
 
-#text2 {
-padding-top: 100px;
-    font-family: Poiret One;
-    font-size: 30px;
+.img-container-first{
+    position: absolute;
+    top: 700px;
+    width: 50%;
+    left: -800px;
+  
 }
-
-.col-md-6 #img1{
-    max-width: 500px;
+.img-container-first img{
+    margin: 0 auto;
+    width: 90%;
+    display:block;
     border-radius: 10px;
+}
+@keyframes animation-img {
+    from{left: -800px;}
+    to{left: 0;}
+}
+@keyframes animation-text {
+    from{right: -800px;}
+    to{right: 0;}
+}
+.text-container-second{
+    position: absolute;
+    top: 1400px;
+    left: 0;
+    width: 50%;
+}
+.text-container-second p{
+    margin: 12% auto;
+    width: 80%;
+    font-size: 50px;
+    font-family: Poiret One;
     
-    
+}
+.img-container-second{
+    position: absolute;
+    top: 1400px;
+    width: 50%;
+    right: 0;
+  
+}
+.img-container-second img{
+    margin: 0 auto;
+    width: 90%;
+    display:block;
+    border-radius: 10px;
 }
 
-
-section {
-    text-align: justify;
-    padding: 10px;
-    font-size: 20px;
-    
-}
-
-footer {
-    background-color: black;
-    padding: 10px;
-}
-
-
-#arrow-back{
-    margin: 10px;
-    width: 50px;
-    
-}
-
-.topnav .icon {
-display: none;
-margin: 10px 20px 0 0;
-} 
-
-.topnav .icon:hover {
-text-decoration: none;
-}
 
     
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */

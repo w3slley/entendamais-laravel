@@ -22,24 +22,32 @@
       </video>
 
 <div class="body">
-    <section>
-        
-    <p id="text1">Aprenda matemática, física e astronomia com imagens intuitivas.</p>
+    <div class="text-container-first">
+        <p>Aprenda matemática, física e astronomia com imagens intuitivas.</p>
+     </div>
+    <div class="img-container-first">
+        <img src="images/pi.jpg">
 
-    <img id="img1" class="img-fluid" src="images/if%20i_ve%20seen%20further.jpg">
+    </div>
+   
+   <div class="text-container-second">
+        <p>Inspire-se com citações que fazem você pensar mais sobre a realidade!</p>
+     </div>
+    <div class="img-container-second">
+        <img src="images/age.jpg">
 
-    </section>
+    </div>
 
-    <section>
-
+    {{-- <div class="text-container">
+    <div class="img-container">
     <img id="img1" class="img-fluid" src="images/Wg7MVu.jpg">
 
     <p id="text2">Inspire-se com citações que fazem você pensar mais sobre a realidade!</p>
 
-    </section>
+    </section> --}}
 
-  
-<script src="js/main.js"></script>    
+    
 </div>
-
+  
+<script src="js/main.js"></script>
 @endsection
