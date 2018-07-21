@@ -7,6 +7,9 @@ window.onscroll = function(){
     var textContainerFirst = document.querySelector('.text-container-first');
     var imageContainerFirst = document.querySelector('.img-container-first');
 
+    var textContainerSecond = document.querySelector('.text-container-second');
+    var imageContainerSecond = document.querySelector('.img-container-second');
+
     
 
     if(scroll > 1){
@@ -30,6 +33,20 @@ window.onscroll = function(){
         textContainerFirst.style.right = '0';
 
     }
+
+    if(scroll>1000){
+        imageContainerSecond.style.display = 'block';
+        imageContainerSecond.style.animationName = 'animation-img-second';
+        imageContainerSecond.style.animationDuration = '2s';
+        imageContainerSecond.style.top = '1300px';
+
+        textContainerSecond.style.display = 'block';
+        textContainerSecond.style.animationName = 'animation-text-second';
+        textContainerSecond.style.animationDuration = '2s';
+        textContainerSecond.style.top = '1300px';
+        
+    }
+    
     if(scroll == 0){
         nav.style.backgroundColor = 'transparent';
         nav.style.boxShadow = 'none';

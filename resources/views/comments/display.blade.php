@@ -1,9 +1,12 @@
 
 <div class="write-comment">
+    <h2>Escreva um comentário</h2><br>
     {{ Form::open(['method'=> 'POST', 'action' => "CommentsController@store"]) }}
-        {{ Form::text('author','', ['placeholder' => 'Your name']) }}<br>
-        {{ Form::textarea('comment', '', ['placeholder' => 'Write a comment']) }}<br>
-        {{ Form::submit('Comment') }}
+        {{ Form::label('title', 'Nome:', ['class' => 'write-title']) }}<br>
+        {{ Form::text('author','', ['placeholder' => 'Seu nome']) }}<br><br>
+         {{ Form::label('comment', 'Comentário:', ['class' => 'write-title']) }}<br>
+        {{ Form::textarea('comment', '', ['placeholder' => 'Escreva o seu comentário...']) }}<br>
+        {{ Form::submit('Enviar') }}
         {{ Form::hidden('post_uri', $post->post_slug)}}
     {{ Form::close() }}
 </div>

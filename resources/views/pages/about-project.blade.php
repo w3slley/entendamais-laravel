@@ -15,7 +15,7 @@
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                    <img class="d-block w-100" src="images/pi.jpg" alt="First slide">
+                    <img class="d-block w-100" src="images/further.jpg" alt="First slide">
                     </div>
                     <div class="carousel-item">
                     <img class="d-block w-100" src="images/light-year.jpg" alt="Second slide">
@@ -43,6 +43,13 @@
             <p class="text-about-project">
                 O projeto Entenda Mais foi criado com o intuito de tornar público um dos bens mais preciosos de nossa espécie: o conhecimento. Portanto, através da plataforma será possível obter conhecimento sobre diversos tópicos sobre o mundo natural, desde matemática e física até biologia e astronomia, tendo como intuito, sempre, apresentar as características físicas do mundo em que vivemos.
                 </p>
+
+                 <div class="social-contact">
+                    <a target="_blank" href="https://facebook.com/entendama1s"><img src="images/facebook.png"></a>
+                   
+                    <a target="_blank" href="https://www.youtube.com/channel/UCuNdz9OMqAl9o2QTwUwQYyQ"><img src="images/youtube.png"></a>
+
+                </div>
 
             </div>
 

@@ -37,6 +37,13 @@
         <img src="images/age.jpg">
 
     </div>
+   
+    <div class="video">
+        <h1>Aprenda com os vídeos do projeto!</h1>
+        <video controls>
+        <source src="videos/curiosidade_humana.mp4" type="video/mp4">
+        </video>
+    </div>
 
     {{-- <div class="text-container">
     <div class="img-container">

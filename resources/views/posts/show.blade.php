@@ -26,14 +26,20 @@
             </div>
         @endforeach
         <hr>
-        <h1>Comments ({{$count_comments}}):</h1>
-        @foreach($comments as $comment)
-            <div class="display-comments">
-                <p>{{$comment->author}}</p>
-                <p>{{$comment->comment}}</p>
-                <p>{{$comment->created_at->diffForHumans()}}</p>
-            </div>
-        @endforeach
+        <h1>Comentários ({{$count_comments}}):</h1>
+        @if($count_comments != 0)
+
+            @foreach($comments as $comment)
+                <div class="display-comments">
+                    <p class="author-comment">{{$comment->author}} comentou:</p>
+                    <p class="content-comment">{{$comment->comment}}</p>
+                    <p class="date-comment">{{$comment->created_at->diffForHumans()}}</p>
+                </div>
+            @endforeach
+
+        @else
+            <h2>No comments</h2>
+        @endif
         <hr>
         @include('comments.display')
         
