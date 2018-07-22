@@ -10,7 +10,7 @@
 @section('body')
     <div class="side-bar">
         <ul>
-            <a class="close-icon" href="#">&#10005;</a>
+            <div class="close-icon">&#10005;</div>
             <li><a class="nav-link-mobile" href="/">Início</a></li> 
             <li><a class="nav-link-mobile" href="/posts">Artigos</a></li>
             <li><a class="nav-link-mobile" href="/about-me">Sobre o autor</a></li>

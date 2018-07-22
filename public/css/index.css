@@ -240,16 +240,25 @@ nav ul li {
         display: none;
 
     }
+    
     .side-bar{
         display: block;
         background-color: rgb(64, 67, 78);
         position: fixed;
         min-height: 100%;
-        width: 0%;
-        right: 0;
+        width: 100%;
+        right: -1000px;
         top: 0;
-        transition: width 1s;
         z-index: 1;
+    }
+
+    @keyframes side-bar-animation-in{
+        from{right: -1000px;}
+        to{right: 0;}
+    }
+    @keyframes side-bar-animation-out{
+        from{right: 0;}
+        to{right: -1000px;}
     }
     .side-bar ul{
         position: relative;
@@ -274,6 +283,10 @@ nav ul li {
         font-size: 30px;
         color: white;
     }
+    .nav-link-mobile:hover{
+        text-decoration: none;
+        color: white;
+    }
     .close-icon{
         display: none;
         font-size: 30px;
@@ -282,11 +295,9 @@ nav ul li {
         right: 20px;
         top: -60px;
         z-index: 10;
+        cursor: pointer;
     }
-    .close-icon:hover{
-        color: white;
-        text-decoration: none;
-    }
+   
     .responsive-icon{
         display: block;
         font-size: 60px;
@@ -295,13 +306,11 @@ nav ul li {
         right: 15px;
         top: -7px;
         z-index: 10;
+        cursor: pointer;
         
         
     }
-    .responsive-icon:hover{
-        color: white;
-        text-decoration: none;
-    }
+    
     .logo-nav{
         margin: 5px 0 5px 5px;
         display: block;

@@ -8,8 +8,17 @@
 @endsection
 
 @section('body')
-<div class="body">
- 
+<div class="side-bar">
+        <ul>
+            <div class="close-icon">&#10005;</div>
+            <li><a class="nav-link-mobile" href="/">Início</a></li> 
+            <li><a class="nav-link-mobile" href="/posts">Artigos</a></li>
+            <li><a class="nav-link-mobile" href="/about-me">Sobre o autor</a></li>
+            <li><a class="nav-link-mobile" href="/about-project">Sobre o projeto</a></li>
+        </ul>    
+    </div>
+    
+<div class="body-post">
     <hr>
     <h2><b>Artigos:</b></h2>
     @if(count($posts)> 0)
@@ -19,7 +28,7 @@
                 @if($post->cover_image == '')
 
                 @else
-                    <img class="post-img-index" src="/storage/cover_images/{{$post->cover_image}}"">
+                    <img class="post-img-index" src="/storage/cover_images/{{$post->cover_image}}">
                 @endif 
             </div>
            
@@ -38,5 +47,6 @@
     
     
 </div>  
-<script src="/js/post.js"></script>   
+
+<script src="js/post.js"></script> 
 @endsection

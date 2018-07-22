@@ -1,6 +1,6 @@
 <header>
     <nav class="topnav" id="myTopnav">
-        <img class="logo-nav" src="images/entendamais_logo.png">
+        <a href="/"><img class="logo-nav" src="/images/entendamais_logo.png"></a>
         <ul>
             @guest
                 
@@ -33,7 +33,7 @@
                     </div>
                 </li>
             @endguest
-            <li><a class="responsive-icon" href="#"><span>&#8801;</span></a> {{-- This one is working. The other menu icon didn't want to work out.  --}}
+            <div class="responsive-icon">&#8801;</div> {{-- This one is working. The other menu icon didn't want to work out.  --}}
             <li><a class="nav-link" href="/about-project">Sobre o projeto</a></li>
             <li><a class="nav-link" href="/about-me">Sobre o autor</a></li>
             <li><a class="nav-link" href="/posts">Artigos</a></li>

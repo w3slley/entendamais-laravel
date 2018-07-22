@@ -34,7 +34,7 @@ window.onscroll = function(){
 
     }
 
-    if(scroll>1000){
+    if(scroll>1050){
         imageContainerSecond.style.display = 'block';
         imageContainerSecond.style.animationName = 'animation-img-second';
         imageContainerSecond.style.animationDuration = '2s';
@@ -68,12 +68,16 @@ if(mq.matches){
     responsiveIcon.onclick = function(){
         document.body.overflow = 'hidden';
         closeIcon.style.display = 'block';
-        sideBar.style.width = '100%';
+        sideBar.style.animationName = 'side-bar-animation-in';
+        sideBar.style.animationDuration = '.6s';
+        sideBar.style.right = '0';
     }
 
     closeIcon.onclick = function(){
         closeIcon.style.display = 'none'; 
-        sideBar.style.width = '0%';
+        sideBar.style.animationName = 'side-bar-animation-out';
+        sideBar.style.animationDuration = '.6s';
+        sideBar.style.right = '-1000px';
         
         
     }
