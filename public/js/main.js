@@ -112,7 +112,7 @@ if(mq.matches){
             textContainerFirst.style.display = 'block';
             textContainerFirst.style.animationName = 'animation-text-mobile';
             textContainerFirst.style.animationDuration = '1s';
-            textContainerFirst.style.right = '0';
+            textContainerFirst.style.left = '0';
         }
         
         if(scroll > 450){

@@ -88,7 +88,7 @@ class PostsController extends Controller
     {
         $post = Post::where('post_slug', $title)->get();
         $count_comments = Comment::where('post_slug', $title)->count();
-        $comment = Comment::where('post_slug', $title)->orderBy('id', 'DESC')->get();
+        $comment = Comment::where('post_slug', $title)->orderBy('id')->get();
 
         return view('posts.show')->with(
             ['post' => $post,

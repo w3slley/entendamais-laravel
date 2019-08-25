@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('pages.index');
 });
+Route::get('/test', function () {
+    return view('pages.index');
+});
 Route::get('/about-me', function () {
     return view('pages.about-me');
 });

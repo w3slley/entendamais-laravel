@@ -40,7 +40,7 @@
    
    <div class="container-div">
     <div class="text-container-second">
-            <p>Inspire-se com citações que fazem você pensar mais sobre a realidade!</p>
+            <p>Inspire-se com artigos que fazem você pensar mais sobre a realidade!</p>
         </div>
         <div class="img-container-second">
             <img src="images/age.jpg">

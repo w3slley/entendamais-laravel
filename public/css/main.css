@@ -169,7 +169,7 @@ h2 a:hover{
 }
 
 .display-comments{
-    background-color: rgba(121, 113, 71, 0.808);
+    background-color: rgba(184, 179, 154, 0.808);
     border-radius: 5px;
     margin-top: 30px;
     padding: 10px;
@@ -361,7 +361,7 @@ text-decoration: none;
         padding-top: 10px;
     }
     .post{
-        background-color:#D9DBBC;
+        background-color: rgb(229, 231, 203);
         height: 100px;
         font-family: Quicksand;
         border-radius: 5px;
@@ -420,7 +420,7 @@ text-decoration: none;
         display: block;
     }
     .display-comments{
-        background-color: rgba(121, 113, 71, 0.808);
+        background-color: rgba(184, 179, 154, 0.808);
         border-radius: 5px;
         margin-top: 30px;
         padding: 10px;

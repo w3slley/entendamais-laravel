@@ -19,7 +19,6 @@ class CreatePostsTable extends Migration
             $table->text('post_content');
             $table->text('post_slug');
             $table->text('cover_image');
-            $table->text('author');
             $table->timestamps();
         });
     }
