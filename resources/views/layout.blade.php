@@ -14,10 +14,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Poiret+One|Amatic+SC|Indie+Flower|Lobster|Quicksand|Dosis|Judson" rel="stylesheet">
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     @yield('css')
-    
+
 </head>
 
 <body>
@@ -28,10 +29,13 @@
     <footer>
     </footer>
 
-  
-    
+
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="/js/post.js"></script>
 </body>
 </html>

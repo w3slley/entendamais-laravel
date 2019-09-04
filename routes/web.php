@@ -17,7 +17,7 @@ Route::get('/', function () {
 Route::get('/test', function () {
     return view('pages.index');
 });
-Route::get('/about-me', function () {
+Route::get('/about-author', function () {
     return view('pages.about-me');
 });
 Route::get('/about-project', function () {

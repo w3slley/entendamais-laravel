@@ -1,8 +1,8 @@
 body {
-    margin:0; 
+    margin:0;
     background-color: white;
     overflow-x: hidden;/*This is how I solved the problem with the vertical scrollbar showing up when the animation of the image and text occour in the index file -*/
-    
+
 }
 
 .body{
@@ -11,13 +11,13 @@ body {
 
 
 nav {
-    width: 100%; 
+    width: 100%;
     position: fixed;
     top:0;
     z-index: 1;
     transition: background-color .6s, box-shadow .6s;
-    
-    
+
+
 }
 
 
@@ -50,7 +50,7 @@ nav ul li {
 .side-bar{
     width: 0%;
     display: none;
-    
+
 }
 
 
@@ -58,7 +58,7 @@ nav ul li {
     max-width:60px;
     float:left;
     margin: 10px 0 10px 20px;
-    
+
 
 }
 
@@ -68,40 +68,34 @@ nav ul li {
     position: absolute;
     top: 0;
     left: 0;
-    max-height: 100%;
+    height: 100vh;
     max-width: 100%;
     z-index: -1;
-    
+
 }
 
 
-
+.welcome{
+  display: flex;
+  height: 100vh;
+}
 
 .main-text {
-    margin: 0;
-    width: 50%;
-    position: absolute;
-    left: 100px;
-    top: 35%;
-    
-          
-
+  padding: 120px 0 0 40px;;
+  margin: 0;
+  width: 50%;
 }
 
 .main-text h1{
-    color: white;
-    text-align: center;
-    font-family: Poiret One;
+  color: white;
+  text-align: center;
+  font-family: Poiret One;
 }
 
 .main-img{
-    margin: 0;
-    width: 50%;
-    position: absolute;
-    right: 0;
-    top: 25%;
-   
-
+  padding-top: 50px;
+  margin: 0;
+  width: 50%;
 }
 
 .main-img img{
@@ -110,95 +104,73 @@ nav ul li {
     display: block;
 }
 
-.text-container-first{
-    position: absolute;
-    top: 700px;
-    
-    display: none;
-    width: 50%;
+.container1{
+  display: flex;
+  margin: 50px auto 200px auto;
+  width: 90%;
+  font-family: Quicksand;
 }
-.text-container-first p{
-    margin: 12% auto;
-    width: 100%;
-    font-size: 50px;
-    font-family: Poiret One;
-    
+.container1 .left{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.img-container-first{
-    position: absolute;
-    top: 700px;
-    width: 50%;
-    left: -800px;
-  
+.container1 .left p{
+  font-size: 30px;
 }
-.img-container-first img{
-    margin: 0 auto;
-    width: 90%;
-    display:block;
-    border-radius: 10px;
+.container1 .right{
+  width: 50%;
 }
-@keyframes animation-img {
-    from{left: -800px;}
-    to{left: 0;}
+.container1 .right img{
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 5px;
 }
-@keyframes animation-text {
-    from{
-        right: -200px;
-        position: absolute;
-    }
-    to{right: 0;}
+.container2{
+  display: flex;
+  margin: 100px auto 150px auto;
+  width: 90%;
+  font-family: Quicksand;
 }
-
-@keyframes animation-text-mobile {
-    from{left: -450px;}
-    to{left: 0;}
+.container2 .left{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.text-container-second{
-    position: absolute;
-    top: 1300px;
-    left: 0;
-    width: 50%;
-    display: none;
+.container2 .left p{
+  font-size: 30px;
 }
-.text-container-second p{
-    margin: 12% auto;
-    width: 80%;
-    font-size: 50px;
-    font-family: Poiret One;
-    
+.container2 .right{
+  width: 50%;
 }
-.img-container-second{
-    position: absolute;
-    top: 1300px;
-    width: 50%;
-    right: 0;
-    display: none;
-  
+.container2 .right img{
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 5px;
 }
-.img-container-second img{
-    margin: 0 auto;
-    width: 90%;
-    display:block;
-    border-radius: 10px;
-}
-@keyframes animation-text-second{
-    from{top:1400px;}
-    to{top: 1300px;}
+.container3{
+  position: relative;
+  height: auto;
+  text-align: center;
 }
 
-@keyframes animation-img-second{
-    from{top:1400px;}
-    to{top: 1300px;}
+.container3 p{
+  font-size: 45px;
+  color: white;
 }
-
-.video{
-    position: absolute;
-    margin: 2000px 0px auto;
-    display: block;
-    width: 100%;
-    left: 0;
-   
+.container3 img{
+  width: 100%;
+}
+.blur{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.2);
+}
+.container4{
+  position: relative;
 }
 .video video {
     width: 65%;
@@ -218,26 +190,27 @@ nav ul li {
     font-size: 80px;
     margin-bottom: 50px;
 }
-    
+
+footer{
+  position: relative;
+  bottom: 0;
+  height: 100px;
+  background-color: #262626;
+}
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media only screen and (max-width: 780px) {
     body{
         margin: 0;
-       
-        
-
     }
     nav {
         width: 100%;
-        
-        
     }
     .nav-link{
         display: none;
 
     }
-    
+
     .side-bar{
         display: block;
         background-color: rgb(64, 67, 78);
@@ -261,7 +234,7 @@ nav ul li {
         position: relative;
         left: 0;
         margin-top: 80px;
-        
+
     }
     .side-bar ul li{
         list-style: none;
@@ -273,7 +246,7 @@ nav ul li {
         margin: 40px auto;
         padding-left: 10px;
     }
-    
+
     .nav-link-mobile{
 
         font-family: Poiret One;
@@ -294,7 +267,7 @@ nav ul li {
         z-index: 10;
         cursor: pointer;
     }
-   
+
     .responsive-icon{
         display: block;
         font-size: 60px;
@@ -304,30 +277,23 @@ nav ul li {
         top: -7px;
         z-index: 10;
         cursor: pointer;
-        
-        
     }
-    
+
     .logo-nav{
         margin: 5px 0 5px 5px;
         display: block;
     }
+    .welcome{
+      display: block;
+    }
     #video-background{
-        position: absolute;
-        min-width: 100%;
-        min-height: 100%;
-        right: 0;
-        bottom: 0;
-        margin: 0;
+        height: 80vh;
 
-        
     }
     .body{
-        margin-top: -150px;
         width: 100%;
     }
-    
- 
+
     .main-text{
         position: absolute;
         width: 100%;
@@ -340,53 +306,48 @@ nav ul li {
     .main-img{
         display: none;
     }
+    .container1{
+      display: block;
 
-    .text-container-first{
-        position: relative;
-        width: 100%;
     }
-    .text-container-first p{
-        font-size: 30px;
-        text-align: center;
+    .container1 .left{
+      width: 100%;
     }
-    .img-container-first{
-        position: relative;
-        width:100%;
+    .container1 .right{
+      width: 100%;
     }
-
-    .text-container-second{
-        position: relative;
-        width: 100%;
+    .container1 .right img{
+      width: 100%;
+      margin: 0 auto;
     }
-    .text-container-second p{
-        font-size: 25px;
-        text-align: center;
+    .container2{
+      display: block;
     }
-    .img-container-second{
-        position: relative;
-        width:100%;
+    .container2 .left{
+      width: 100%;
     }
-
-    .img-container-second img{
-        width: 100%;
+    .container2 .right{
+      width: 100%;
+      margin: 0 auto;
+    }
+    .container2 .right img{
+      width: 100%;
+      margin: 0 auto;
     }
 
-    .container-div{
-        position: absolute;
-        top: -150px;
-        right: 0;
-        left: 0;
-        margin: 0 auto;
-        width: 90%;
-        display: block;
-        
+    .container3{
+      display: block;
+      position: relative;
+      height: 600px;
+      text-align: center;
     }
-
+    .container3 img{
+      width: 100%;
+    }
     .video{
         width: 100%;
         position: relative;
-        top: -100px;
-        
+
     }
     .video h1{
         font-size: 35px;
@@ -398,5 +359,5 @@ nav ul li {
         height: 200px;
     }
 
-    
+
 }
